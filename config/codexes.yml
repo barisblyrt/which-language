@@ -18,6 +18,7 @@ codexes:
       api_key: "${GOOGLE_API_KEY}"  # Or set directly: "your-api-key-here"
       model: "gemini-3.1-flash-lite-preview"
       cooldown_seconds: 1.2
+
   aider:
     enabled: true
     class: AiderCodex
@@ -41,6 +42,15 @@ codexes:
       # price_input_1m: 0.0
       # price_cached_input_1m: 0.0
       # price_output_1m: 0.0
+  
+  groq:
+    enabled: true
+    class: GroqCodex
+    config:
+      # Get your API key from https://console.groq.com/
+      api_key: "${GROQ_API_KEY}"
+      model: "llama-3.3-70b-versatile"
+      cooldown_seconds: 1.5
 
   # =========================================================================
   # PLANNED CODEXES (Templates - uncomment and configure to enable)
