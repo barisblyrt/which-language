@@ -191,6 +191,7 @@ Each entry provides things like:
 | Claude Code | ✅ | default CLI adapter |
 | Gemini | ✅ | API adapter with metrics extraction |
 | OpenAI | ✅ | Responses API adapter with optional cost accounting |
+| Groq | ✅ | API adapter with robust parsing features for supported models |
 
 See [ROADMAP.md](./ROADMAP.md) for planned adapters such as DeepSeek, Qwen, Aider, Cline, and more.
 
