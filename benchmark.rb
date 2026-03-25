@@ -21,9 +21,9 @@ NPM_PREFIX = File.join(Dir.home, '.local', 'npm')
 
 LANGUAGES = {
   'rust'        => { exts: %w[rs],     version_cmd: 'rustc --version' },
-  'go'          => { exts: %w[go],     version_cmd: "#{GO_DIR}/bin/go version" },
+  'go'          => { exts: %w[go],     version_cmd: "go version" },
   'c'           => { exts: %w[c h],    version_cmd: 'gcc --version | head -1' },
-  'typescript'  => { exts: %w[ts],     version_cmd: "#{NPM_PREFIX}/bin/tsx --version" },
+  'typescript'  => { exts: %w[ts],     version_cmd: "tsc --version" },
   'javascript'  => { exts: %w[js],     version_cmd: 'node --version' },
   'java'        => { exts: %w[java],   version_cmd: 'java --version 2>&1 | head -1' },
   'perl'        => { exts: %w[pl pm],  version_cmd: 'perl --version | head -2 | tail -1' },
